@@ -1,0 +1,11 @@
+### THIS FILE IS MANAGED BY PUPPET. DO NOT EDIT ! ###
+
+vbell                 off
+startup_message       off             # default: on
+activity              "activity in %n (%t) [%w:%s]~"
+bell                  "bell     in %n (%t) [%w:%s]~"
+vbell_msg             " *beep* "
+hardstatus alwayslastline
+backtick  1 120 120 hostname -f
+
+hardstatus string  "%Y/%m/%d  %c  %l  %-Lw%{= bd}%50>%n%f* %t%{-}%+Lw%<%=%{+s r}%1`"

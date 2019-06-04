@@ -1,0 +1,70 @@
+"---------------------------------------------------------------
+"Darstellung
+"---------------------------------------------------------------
+
+colorscheme lucius "Farbschema
+
+"MY PARAMETER
+set shell=/bin/bash
+set textwidth=75 "Zielenlaenge von 75 Zeichen optimierung für DinA4
+set t_Co=256 "Volle Farbenunterstützung für die Konsole
+set nobackup
+
+syntax enable "Syntax-Highlighting enable da on das Farbschema ausser kraft setzt
+
+set number "zeilennummeriung ein
+
+set ts=2 "setzt eine Tabulator tiefe von 2 Zeichen
+
+"set autoindent "indent when moving to the next line while writing code
+
+set expandtab "expand tabs into spaces
+
+set shiftwidth=4 "tiefe des automatischen Einrueckens
+
+set cursorline "hinterlegung der aktuellen zeile
+
+set showmatch "show the matching part of the pair for [] {} and ()
+
+set hlsearch " Highlighting search matches
+
+
+" enable all Python syntax highlighting features
+let python_highlight_all = 1
+
+
+""" VUNDLE Vim Package Manager
+" no vi compat
+set nocompatible
+
+" filetype func off
+filetype off
+
+" initialize vundle
+"set rtp+=~/.vim/bundle/Vundle.vim
+
+"call vundle#begin()
+"" start- all plugins below
+"
+"Plugin 'VundleVim/Vundle.vim'
+"Plugin 'scrooloose/nerdtree.git'
+"Bundle 'chase/vim-ansible-yaml'
+"" stop - all plugins above
+"call vundle#end()
+
+" filetype func on
+filetype plugin indent on
+
+" NERDTree shortcut
+map <C-n> :NERDTreeToggle<CR> 
+" Resize a wirth of NERDTre
+"map <C-o> :vertical resize + 2
+                              
+
+" More natural split opening
+set splitbelow
+set splitright
+
+" Mouse Support
+set mouse=a
+

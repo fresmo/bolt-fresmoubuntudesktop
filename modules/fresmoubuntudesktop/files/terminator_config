@@ -1,0 +1,26 @@
+[global_config]
+  scroll_tabbar = True
+  title_font = FreeSans 8
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      size = 900, 600
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#1b1d1e"
+    background_darkness = 0.9
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = Ubuntu Mono 11
+    foreground_color = "#48f9ee"
+    scrollback_lines = 1000
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
