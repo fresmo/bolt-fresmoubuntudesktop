@@ -1,32 +1,40 @@
-"---------------------------------------------------------------
-"Darstellung
-"---------------------------------------------------------------
+colorscheme lucius
 
-colorscheme lucius "Farbschema
+"-----MY PARAMETERS-----
 
-"MY PARAMETER
 set shell=/bin/bash
-set textwidth=75 "Zielenlaenge von 75 Zeichen optimierung für DinA4
-set t_Co=256 "Volle Farbenunterstützung für die Konsole
+
+"Linelenght optimized for DIN A4
+set textwidth=75
+
+"Full color support in terminal
+set t_Co=256
+
 set nobackup
 
-syntax enable "Syntax-Highlighting enable da on das Farbschema ausser kraft setzt
+"Syntax-Highlighting enable
+syntax enable
 
-set number "zeilennummeriung ein
+set number
 
-set ts=2 "setzt eine Tabulator tiefe von 2 Zeichen
+"Set tabs depth up to 2 characters
+set ts=2
 
-"set autoindent "indent when moving to the next line while writing code
+"Indent when moving to the next line while writing code
+"set autoindent
 
-set expandtab "expand tabs into spaces
+"Expand tabs into spaces
+set expandtab
 
-set shiftwidth=4 "tiefe des automatischen Einrueckens
+set shiftwidth=4
 
-set cursorline "hinterlegung der aktuellen zeile
+set cursorline
 
-set showmatch "show the matching part of the pair for [] {} and ()
+"show the matching part of the pair for [] {} and ()
+set showmatch
 
-set hlsearch " Highlighting search matches
+" Highlighting search matches
+set hlsearch
 
 
 " enable all Python syntax highlighting features
@@ -56,15 +64,14 @@ filetype off
 filetype plugin indent on
 
 " NERDTree shortcut
-map <C-n> :NERDTreeToggle<CR> 
+map <C-n> :NERDTreeToggle<CR>
 " Resize a wirth of NERDTre
 "map <C-o> :vertical resize + 2
-                              
+
 
 " More natural split opening
 set splitbelow
 set splitright
 
 " Mouse Support
-set mouse=a
-
+"set mouse=a

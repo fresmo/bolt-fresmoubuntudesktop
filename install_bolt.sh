@@ -1,17 +1,17 @@
 #!/bin/bash
-set -x 
-#set -e 
+set -x
+#set -e
 
-GIT_REPO="git@gitlab.com:fresmo/bolt-fresmoubuntudesktop.git"
+GIT_REPO="https://github.com/fresmo/bolt-fresmoubuntudesktop.git"
 
 wget -P /tmp/  https://apt.puppet.com/puppet6-release-bionic.deb
 sudo dpkg -i /tmp/puppet6-release-bionic.deb
 sudo apt update
-sudo apt upgrade -y 
+sudo apt upgrade -y
 sudo apt install -y ruby puppet-bolt facter
 
 if [ ! -d  "~/.puppetlabs/bolt/modules" ]
-  then 
+  then
     mkdir -p  ~/.puppetlabs/bolt/modules
 fi
 
@@ -28,5 +28,3 @@ if [ -d  "~/bolt_repo/bolt-fresmoubuntudesktop" ]
 fi
 
 bolt puppetfile install
-
-
